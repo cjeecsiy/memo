@@ -1,5 +1,5 @@
 #gitメモ
 
-- リポジトリを設定
-```Bash % git remote add ${remote-name} ${url}```
+- リポジトリを設定  
+``` $ git remote add ${remote-name} ${url} ```
 
