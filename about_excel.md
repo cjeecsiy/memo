@@ -4,7 +4,7 @@
 
 
 
-Ctrl+5 取り消し線
-Ctrl+Shift+L フィルタ
-Ctrl+B 太字
+ * Ctrl+5 取り消し線
+ * Ctrl+Shift+L フィルタ
+ * Ctrl+B 太字
 
