@@ -1,6 +1,6 @@
 #gitメモ
 
-- リモートリポジトリを設定  
+- リモートリポジトリを設定
 ``` $ git remote add ${remote-name} ${url} ```
 - リモートリポジトリの確認
 ``` $ git remote -v ```
