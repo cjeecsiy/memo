@@ -12,5 +12,8 @@
 ``` git commit -m "コメントメッセージ" ```
 - コミット対象として登録
 ``` git add ${commit-file-path} ```
-
+- 以前のコミット内容に戻す(revert)
+``` git checkout -f ```
+- ステータスの確認(svn -u st)
+``` git status ```
 
