@@ -6,7 +6,7 @@
 ``` $ git remote -v ```
 - リモートリポジトリの削除
 ``` $ git remote rm ${remote-name} ```
-- リモートへの更新
+- リモートへの更新(git pushに省略可能)
 ``` git push -u ${remote-name} master ```
 - コミット
 ``` git commit -m "コメントメッセージ" ```
