@@ -11,15 +11,15 @@
   
 バインド変数もだせるようになるらしい  
 設定するレベルによってトレースの粒度が異なる。  
-ALTER SYSTEM SET EVENTS '10046 trace name context forever, level 4';  
+    ALTER SYSTEM SET EVENTS '10046 trace name context forever, level 4';  
 1.Level 1 -> SQLトレースだけ  
 2.Level 4 -> SQLトレースとバインド変数  
 3.Level 8 -> SQLトレースと待機イベント  
 4.Level 12 -> SQLトレースとバインド変数と待機イベント  
   
 戻し方  
-ALTER SYSTEM SET SQL_TRACE = FALSE;  
-ALTER SYSTEM SET EVENTS '10046 trace name context off';  
+    ALTER SYSTEM SET SQL_TRACE = FALSE;  
+    ALTER SYSTEM SET EVENTS '10046 trace name context off';  
 
 
 
