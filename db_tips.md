@@ -3,9 +3,10 @@
   
 ## Oracle
   
--[OracleSQLトレースログの出し方](http://d.hatena.ne.jp/replication/20130110/1357824989)
-おおよそのpath：oracle/diag/rdbms/xe/xe/trace  
-設定
+- [OracleSQLトレースログの出し方](http://d.hatena.ne.jp/replication/20130110/1357824989)  
+
+#### おおよそのpath：oracle/diag/rdbms/xe/xe/trace  
+#### 設定
 
     ALTER SYSTEM SET SQL_TRACE = TRUE;  
 
@@ -17,15 +18,27 @@
 
     ALTER SYSTEM SET EVENTS '10046 trace name context forever, level 4';  
 
-1.Level 1 -> SQLトレースだけ  
-2.Level 4 -> SQLトレースとバインド変数  
-3.Level 8 -> SQLトレースと待機イベント  
-4.Level 12 -> SQLトレースとバインド変数と待機イベント  
+1. Level 1 -> SQLトレースだけ  
+2. Level 4 -> SQLトレースとバインド変数  
+3. Level 8 -> SQLトレースと待機イベント  
+4. Level 12 -> SQLトレースとバインド変数と待機イベント  
   
 戻し方  
 
     ALTER SYSTEM SET SQL_TRACE = FALSE;  
     ALTER SYSTEM SET EVENTS '10046 trace name context off';  
+
+## mysql
+
+### homebrewでインストールしたMYSQLが上手く動かないときのtips
+
+まずhomebrewからの情報の確認方法
+
+    brew info mysql
+
+設定手順や起動方法など表示されるので確認する。  
+
+[HomebrewでMySQLをインストールする時に知っておきたいこと](http://tukaikta.blog135.fc2.com/blog-entry-197.html)
 
 
 
