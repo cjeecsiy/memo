@@ -38,7 +38,7 @@
 
 設定手順や起動方法など表示されるので確認する。  
 
-[HomebrewでMySQLをインストールする時に知っておきたいこと](http://tukaikta.blog135.fc2.com/blog-entry-197.html)
+参照[HomebrewでMySQLをインストールする時に知っておきたいこと](http://tukaikta.blog135.fc2.com/blog-entry-197.html)
 
 
 
