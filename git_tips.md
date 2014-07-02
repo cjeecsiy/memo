@@ -1,4 +1,4 @@
-#gitメモ
+# gitメモ
 
 リモートリポジトリを設定
 
@@ -20,14 +20,18 @@
     $ git push -u ${remote-name} master
 
 
+コミット対象として登録
+
+    $ git add ${commit-file-path}
+
+
 コミット
 
     $ git commit -m "コメントメッセージ"
 
+コミット内容の修正
 
-コミット対象として登録
-
-    $ git add ${commit-file-path}
+    $ git commit --amend
 
 
 以前のコミット内容に戻す(revert)
