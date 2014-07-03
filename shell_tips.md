@@ -7,6 +7,15 @@
 
     wc -l < ファイル名
 
+### echoコマンド
+エスケープ文字を認識させる。
+
+    echo "aaa\tbbb"
+
+### awk
+n行目のmフィールド目を取り出す(例は2行目の3番目フィールド)
+
+    echo -e "aaa bbb ccc\nddd eee fff" | awk 'NR==2{print $3}'
 
 ## 設定(シェル変数など)
 ### LANG
