@@ -56,6 +56,9 @@
 
     $ git checkout -b ${newブランチ名}
 
+rspecの実行
+
+    $ git exec rspec spec/requests/static_pages_spec.rb 
 
 
 ## 用語の意味
