@@ -17,6 +17,11 @@ n行目のmフィールド目を取り出す(例は2行目の3番目フィール
 
     echo -e "aaa bbb ccc\nddd eee fff" | awk 'NR==2{print $3}'
 
+上記例は、こんな風にも取得可能。
+
+    awk '{getline;print $3}'
+
+
 ## 設定(シェル変数など)
 ### LANG
 
