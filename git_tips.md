@@ -70,8 +70,11 @@ fork内のデータはfork元の開発者に更新依頼をすることが可能
 簡単に共同開発するための仕組み。  
 
 ### rvm
-rvmのbundleなどのコマンドにパスを通す為のもの
-.bashrcなどに書くのを忘れると泣きをみるので注意。
+こんなエラーが出た。    
+    
+    RVM is not a function, selecting rubies with 'rvm use ...' will not work.
+rvmのbundleなどのサブコマンドにパスを通す為のものを書き忘れたらしい。
+.bashrcに下記を記述すると出なくなった。
 
     source "$HOME/.rvm/scripts/rvm"
 
