@@ -14,3 +14,12 @@
 
     rvm get stable
 
+### rvm 
+こんなエラーが出た。    
+    
+        RVM is not a function, selecting rubies with 'rvm use ...' will not work.
+	rvmのbundleなどのサブコマンドにパスを通す為のものを書き忘れたらしい。
+	.bashrcに下記を記述すると出なくなった。
+
+	    source "$HOME/.rvm/scripts/rvm"
+
