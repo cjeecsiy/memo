@@ -1,8 +1,32 @@
 
 # DBメモ
   
-## Oracle
-  
+## SQL
+#### 更新対象のテーブル以外のテーブルの条件一致を元にテーブルを更新する
+##### [Oracle]
+
+    UPDATE tableA 
+    SET columnA = 'Y' 
+    WHERE columnA = 'N'
+      AND EXISTS (
+        SELECT columnA 
+        FROM tableA A, tableB B 
+        WHERE A.columnAPK = B.columnB )
+
+#### CREATE TABLE と同時に INSERT SELECT する方法
+##### [Oracle]
+
+    CREATE TABLE tableA AS select_strings
+
+## DB総合
+### ロールバック領域
+１つのトランザクションに対してロールバック時の復旧データを保持する領域。
+ロールバック領域を使い果たしてしまった場合、
+現在のトランザクションが終わっていなくてもロールバック領域を上書きをしてしまうため、
+復旧できなくなるらしい。
+
+## Oracle  
+
 - [OracleSQLトレースログの出し方](http://d.hatena.ne.jp/replication/20130110/1357824989)  
 
 #### おおよそのpath：oracle/diag/rdbms/xe/xe/trace  

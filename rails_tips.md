@@ -14,12 +14,15 @@
 
     rvm get stable
 
-### rvm 
-こんなエラーが出た。    
+### エラー
     
-        RVM is not a function, selecting rubies with 'rvm use ...' will not work.
-	rvmのbundleなどのサブコマンドにパスを通す為のものを書き忘れたらしい。
-	.bashrcに下記を記述すると出なくなった。
+    RVM is not a function, selecting rubies with 'rvm use ...' will not work.
 
-	    source "$HOME/.rvm/scripts/rvm"
+rvmのbundleなどのサブコマンドにパスを通す為のものを書き忘れたらしい。
+.bashrcに下記を記述すると出なくなった。
 
+    source "$HOME/.rvm/scripts/rvm"
+
+### 
+
+    /Users/cjeecsiy/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0/gems/activerecord-4.0.4/lib/active_record/migration.rb:383:in `check_pending!': Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=test' to resolve this issue. (ActiveRecord::PendingMigrationError)
