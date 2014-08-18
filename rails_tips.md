@@ -26,3 +26,10 @@ rvmのbundleなどのサブコマンドにパスを通す為のものを書き�
 ### 
 
     /Users/cjeecsiy/.rvm/gems/ruby-2.0.0-p481@railstutorial_rails_4_0/gems/activerecord-4.0.4/lib/active_record/migration.rb:383:in `check_pending!': Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=test' to resolve this issue. (ActiveRecord::PendingMigrationError)
+
+### DBリセットと再設定
+
+    rake db:reset
+    rake db:migrate RAILS_ENV=development
+    rake test:prepare
+
