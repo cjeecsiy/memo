@@ -58,7 +58,7 @@
 
 rspecの実行
 
-    $ git exec rspec spec/requests/static_pages_spec.rb 
+    $ rspec spec/requests/static_pages_spec.rb 
 
 
 ## 用語の意味
