@@ -20,6 +20,9 @@ Mac
     # 13から1ずつ2まで減らす
     seq 13 -1 2
 
+#### forコマンドとの応用で繰り返し処理させる。
+    
+    for num in `seq 1 10` ; do echo "$num:"; wc -l "$num.csv" ; tail -5 "${num}.csv"; done;
 
 ### nkfコマンド
 
