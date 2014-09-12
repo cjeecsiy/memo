@@ -2,6 +2,7 @@
 類語まとめ（・∇・）
 
 ### send
+
 - deliver
 - dispatch
 - announce
@@ -9,18 +10,21 @@
 - route
 
 ### find
+
 - search
 - extract
 - locate
 - recover
 
 ### start
+
 - launch
 - create
 - begin
 - open
 
 ### make
+
 - create
 - set up
 - build
